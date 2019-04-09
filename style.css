@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling */
+header {
+  margin: auto;
+  background-image: url(waterSurface.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Nav Styling */
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  color: #000000;
+  padding: 1%;
+  text-decoration: none;
+}
+
+/* Main Styling */
+
+.carousel-responsive {
+  height: 300 !important;
+}
+
+/* Carousel Size Responsive */
+@media screen and (min-width: 675px) {
+  .carousel-responsive {
+    height: 500 !important;
+  }
+}
