@@ -3,37 +3,93 @@
   padding: 0;
 }
 
-/* Header Styling */
+/* Header and Nav */
 header {
-  margin: auto;
+  margin: 0;
+  padding: 0;
   background-image: url(waterSurface.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 10px;
 }
 
-/* Nav Styling */
 nav {
-  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav ul{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  list-style-type: none;
 }
 
-nav a {
-  color: #000000;
-  padding: 1%;
+nav ul li a {
   text-decoration: none;
+  color: #ffee00;
+  font-family: 'Anton', sans-serif;
 }
 
-/* Main Styling */
-
-.carousel-responsive {
-  height: 300 !important;
+.flex-order {
+  order: 3;
 }
 
-/* Carousel Size Responsive */
-@media screen and (min-width: 675px) {
-  .carousel-responsive {
-    height: 500 !important;
-  }
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
 }
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.indicator {
+  text-align: center;
+}
+
+/* Initial Image */
+.slides img{
+  width: 100%;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Cards Styling */
+.cards {
+  display: flex;
+}
+
+/* Media Queries */
+/* Nav (needs 700px +) */
+
+/* Add water borders (900px +) */
