@@ -39,21 +39,35 @@
         </div>
     </section>
     <section class="cards">
-      <div class="card-story">
+      <div class="card-dive">
         <img src="waterSurface.jpg" alt="#">
         <div class="text">
           <p></p>
         </div>
       </div>
       <div class="card-">
+        <img src="boatbottom.jpg" alt="">
       </div>
       <div class="card-alt-activities">
+        <img src="hawaii-snorkeling.jpg" alt="">
       </div>
     </section>
-    <section class="experience-form">
+    <section>
       <form>
-        <input type="radio" name="experience" value="un-certified">Un-Certified<br>
-        <input type="radio" name="experience" value="certified">Certified
+        <fieldset class="experience-fieldset">
+          <legend>Diving Experience Level</legend>
+          <input type="radio" name="experience" value="un-certified">Un-Certified<br>
+          <input type="radio" name="experience" value="certified">Certified
+        </fieldset>
+        <fieldset class="contact-fieldset">
+          <legend>Return Contact for </legend>
+          <input id="number" type="text" name="number" placeholder="Phone number...">
+          <input type="text" name="email" placeholder="email">
+          <select name="time-zone">
+            <option value="">-Select Time Zone-</option>
+          </select>
+        </fieldset>
+        <input class="button" type="submit" value="Submit">
       </form>
     </section>
   </main>
